@@ -33,12 +33,12 @@
                 } else if (computerSelection == 'paper') {
                     console.log('player wins: scissors beats paper')
                 }
-            } else {
+            } else if (playerSelection == computerSelection) {
                 console.log(`it's a bloody tie`)
             }
         }
 
-        const playerSelection = 'rock';
+        let playerSelection = '';
 
         const computerSelection = computerPlay();
 
